@@ -5,9 +5,9 @@ function Encriptar(){
     if (texto === '') {
         destino.textContent = texto === '' ? 'Ningún mensaje fue encontrado' : texto;
     } else {
-        let textoEncriptado = texto.replace(/a/g, 'ai')
-        .replace(/e/g, 'enter')
+        let textoEncriptado = texto.replace(/e/g, 'enter')
         .replace(/i/g, 'imes')
+        .replace(/a/g, 'ai')
         .replace(/o/g, 'ober')
         .replace(/u/g, 'ufat');
         destino.textContent = textoEncriptado;
@@ -46,12 +46,12 @@ function Desencriptar(){
     if (texto === '') {
         destino.textContent = texto === '' ? 'Ningún mensaje fue encontrado' : texto;
     } else {
-        let textoEncriptado = texto.replace(/'ai/g, 'a')
-        .replace(/enter/g, 'e')
-        .replace(/imes/g, 'i')
-        .replace(/ober/g, 'o')
-        .replace(/ufat/g, 'u');
-        destino.textContent = textoEncriptado;
+        let textoEncriptado = texto.replace(/ai/g, 'a')
+                                    .replace(/enter/g, 'e')
+                                    .replace(/imes/g, 'i')
+                                    .replace(/ober/g, 'o')
+                                    .replace(/ufat/g, 'u');
+                                    destino.textContent = textoEncriptado;
     }
     console.log('el texto a Desencriptar es -> ' + texto);
 }
