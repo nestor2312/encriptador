@@ -19,7 +19,7 @@ function validar(){
     let texto = document.getElementById('text').value;
     let validar = document.getElementById('validar');
 
-    let mayusculas = /[A-Z @$%#]/.test(texto);
+    let mayusculas = /[A-Z@$%#]/.test(texto);
     if(mayusculas ){
         validar.classList.add('textoInvalido');
     }
