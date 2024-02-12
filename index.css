@@ -1,0 +1,146 @@
+body{
+    background: #ced4da;
+}
+h2{
+    font-size: 30px;
+    color: #64a2b4;
+    text-shadow: 
+    -1px -1px 0 #000,  
+     1px -1px 0 #000,
+    -1px  1px 0 #000,
+     1px  1px 0 #000; 
+}
+.box{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+.textoInvalido{
+    color: red;
+    font-size: 20px ; 
+    text-shadow: 
+    -1px -1px 0 #ffffff,  
+     1px -1px 0 #ffffff,
+    -1px  1px 0 #ffffff,
+     1px  1px 0 #ffffff;
+}
+textarea{
+    width: 100%;
+    background: none;
+    border: 3px solid #a7c3cb;
+    font-size: 25px;
+    height: 60vh;
+    border-radius: 5px;
+    
+}
+textarea::placeholder {
+    color: #3e6773; 
+    text-shadow: 
+    -1px -1px 0 #ffffff,  
+     1px -1px 0 #ffffff,
+    -1px  1px 0 #ffffff,
+     1px  1px 0 #ffffff;
+  }
+.box-text{
+    width: 70%;
+}
+.text{
+    display: grid;
+    align-content: space-around;
+    justify-items: center;
+    text-align: center;
+    border-radius: 5px;
+    width: 20%;
+    height: 60vh;
+    background:#64a2b4;
+    text-shadow: 
+    -1px -1px 0 #ffffff,  
+     1px -1px 0 #ffffff,
+    -1px  1px 0 #ffffff,
+     1px  1px 0 #ffffff;
+}
+.buttons{
+    width: 100%;
+}
+button{
+    font-size: 25px;
+    border: none;
+    border: 1px solid ;
+    color: #eff1fa;
+    background: #3e6773;
+    width: 45%;
+    height: 50px;
+    margin-top: 10px;
+    border-radius: 5px;
+    margin-left: 3%;
+    cursor: pointer;
+}
+button:hover{
+    background: #64a2b4;
+    border: 2px solid #3e6773;
+}
+.copiar{
+    font-size: 25px;
+    border: none;
+    border: 1px solid ;
+    color: #eff1fa;
+    background: #3e6773;
+    width: 45%;
+    height: 50px;
+    margin-top: 10px;
+    border-radius: 5px;
+    margin-left: 3%;
+}
+.copiar:hover{
+    background: #3e677377;
+    border: 2px solid #3e6773b0;
+}
+
+/* CSS para movil */
+
+@media screen and (max-width: 480px) {
+    .box{
+        margin-top: 2px;
+        display: block;
+        width: 90%;
+        margin: 0 auto;
+        height: 40%;
+    }
+    .box-text{
+        width: 100%;
+        /* height: 50; */
+    }
+    .text{
+        margin-top: 20px;
+        margin-bottom: 20px;
+        width: 100%;
+        height: 40vh;
+    }
+    button{
+        font-size: 18px;
+    }
+}
+
+/* Tablet */
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+   
+    .box{
+        margin-top: 2px;
+        display: block;
+        width: 90%;
+        margin: 0 auto;
+        height: 40%;
+    }
+    .box-text{
+        width: 100%;
+        /* height: 50; */
+    }
+    .text{
+        margin-top: 20px;
+        margin-bottom: 20px;
+        width: 100%;
+        height: 30vh;
+    }
+  
+}
