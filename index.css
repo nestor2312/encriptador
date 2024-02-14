@@ -58,6 +58,9 @@ textarea::placeholder {
      1px -1px 0 #ffffff,
     -1px  1px 0 #ffffff,
      1px  1px 0 #ffffff;
+     overflow-y: scroll;
+     scroll-behavior: smooth;
+   
 }
 .buttons{
     width: 100%;
@@ -115,9 +118,21 @@ button:hover{
         margin-bottom: 20px;
         width: 100%;
         height: 40vh;
+        font-size: 10px;
+        overflow-y: scroll;
+        scroll-behavior: smooth;
+    }
+    .text, h1{
+        padding-top: 10px;
     }
     button{
         font-size: 18px;
+    }
+    .copiar{
+        margin-bottom: 30px;
+        font-size: 18px;
+        width: 50%;
+        height: 40px;
     }
 }
 
